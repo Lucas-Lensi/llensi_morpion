@@ -62,8 +62,7 @@ class Game
     @current_player = @player1 == @current_player ? @player2 : @player1
     if @board.end_by_victory? == true
       puts "Bravo #{@current_player.player_name}, tu as gagné"
-    end
-    if @board.end_by_equality? == true
+    elsif @board.end_by_equality? == true
       puts "Personne n'a gagné"
     end
   end
